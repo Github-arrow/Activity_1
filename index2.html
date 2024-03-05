@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register New Student</h1>
+    <hr>
+    <form onsubmit="registration()" action="">
+        <table>
+            <tr>
+                <td style="text-align: right">
+                    Student ID :
+                </td>
+                <td>
+                    <input id="inp_sid" type="text" placeholder="Enter Student ID here..">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    Student First Name :
+                </td>
+                <td>
+                    <input required type="text" placeholder="Enter First Name here..">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    Student Last Name :
+                </td>
+                <td>
+                    <input required type="text" placeholder="Enter Last Name here..">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                   
+                </td>
+                <td>
+                    <button style="width: 100%">Submit Registration</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function registration(){
+            const id = document.getElementById('inp_sid').value;
+            if(id === ''){
+                alert('Please enter the student id.')
+            }else{
+                // Save to your server/database
+            }
+        }
+    </script>
+</body>
+</html>
